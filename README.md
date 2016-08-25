@@ -10,6 +10,9 @@
   <a href="https://github.com/GHPReporter/GHPReporter.github.io/">Site Repo</a>
 </p>
 
+[![Language](http://gh-toprated.info/Badges/LanguageBadge?user=GHPReporter&repo=Ghpr.SpecFlow.Examples&theme=light&fontWeight=bold)](https://github.com/GHPReporter/Ghpr.SpecFlow.Examples)
+[![Build status](https://ci.appveyor.com/api/projects/status/dhjn19uiy2qlejqh?svg=true)](https://ci.appveyor.com/project/elv1s42/ghpr-specflow-examples)
+
 # Ghpr.SpecFlow.Examples
 
 Examples for SpecFlow Plugin. You can create pull request with new tests to reproduce some Ghpr.Core or Ghpr.SpecFlow issues.
