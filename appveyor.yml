@@ -1,0 +1,13 @@
+  before_build:
+    - nuget restore Ghpr.SpecFlow.Examples/Ghpr.SpecFlow.Examples.sln
+
+  build_script: 
+    - msbuild Ghpr.SpecFlow.Examples/Ghpr.SpecFlow.Examples.sln /p:Configuration=Release /t:Rebuild
+  
+  test:
+    assemblies:
+      - '**\*Tests.dll'
+      - '**\*Examples.dll'
+    categories:
+      only:
+        - SuccessCategory
