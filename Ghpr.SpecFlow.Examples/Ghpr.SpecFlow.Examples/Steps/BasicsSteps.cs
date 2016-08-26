@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 using TechTalk.SpecFlow;
 
 namespace Ghpr.SpecFlow.Examples.Steps
@@ -21,7 +22,7 @@ namespace Ghpr.SpecFlow.Examples.Steps
         {
             _sum += p0;
         }
-        
+
         [Then(@"the result sum should be (.*)")]
         public void ThenTheResultShouldBe(int p0)
         {

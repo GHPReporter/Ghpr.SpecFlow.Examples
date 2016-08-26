@@ -29,5 +29,35 @@ namespace Ghpr.SpecFlow.Examples.Steps
         {
             Assert.AreEqual(p0, _abs);
         }
+
+        [Then(@"scenario fails by assert")]
+        public void ThenScenarioFailsByAssert()
+        {
+            Assert.Fail("Some failure");
+        }
+
+        [Then(@"scenario fails with exception")]
+        public void ThenScenarioFailsWithException()
+        {
+            throw new Exception("Some exception");
+        }
+
+        [When(@"this scenario fails by assert")]
+        public void WhenScenarioFailsByAssert()
+        {
+            Assert.Fail("Some failure");
+        }
+
+        [When(@"this scenario fails with exception")]
+        public void WhenScenarioFailsWithException()
+        {
+            throw new Exception("Some exception");
+        }
+
+        [Then(@"this step should be skipped")]
+        public void Skipped()
+        {
+            Console.WriteLine("Console: skipped step");
+        }
     }
 }
