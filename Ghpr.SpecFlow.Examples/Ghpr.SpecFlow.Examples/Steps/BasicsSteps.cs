@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 
@@ -13,6 +14,9 @@ namespace Ghpr.SpecFlow.Examples.Steps
         [Given(@"I have number (.*)")]
         public void GivenIHaveNumber(int p0)
         {
+            Trace.WriteLine("TRACE: I have some number...");
+            Console.WriteLine("CONSOLE: I have some number...");
+            Debug.WriteLine("DEBUG: I have some number...");
             _firstNumber = p0;
             _sum = p0;
         }
