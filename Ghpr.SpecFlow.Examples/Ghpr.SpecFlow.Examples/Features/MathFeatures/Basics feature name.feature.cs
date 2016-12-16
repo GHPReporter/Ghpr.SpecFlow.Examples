@@ -17,38 +17,42 @@ namespace Ghpr.SpecFlow.Examples.Features.MathFeatures
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Basics feature name")]
+    [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
     public partial class BasicsFeatureNameFeature
     {
         
-        private TechTalk.SpecFlow.ITestRunner testRunner;
+        private static TechTalk.SpecFlow.ITestRunner testRunner;
         
 #line 1 "Basics feature name.feature"
 #line hidden
         
-        [NUnit.Framework.TestFixtureSetUpAttribute()]
-        public virtual void FeatureSetup()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute()]
+        public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
-            testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
+            testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Basics feature name", "\tIn order to avoid silly mistakes\r\n\tAs a math idiot\r\n\tI want to be told the sum o" +
                     "f numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
-        [NUnit.Framework.TestFixtureTearDownAttribute()]
-        public virtual void FeatureTearDown()
+        [Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute()]
+        public static void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
             testRunner = null;
         }
         
-        [NUnit.Framework.SetUpAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute()]
         public virtual void TestInitialize()
         {
+            if (((testRunner.FeatureContext != null) 
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "Basics feature name")))
+            {
+                Ghpr.SpecFlow.Examples.Features.MathFeatures.BasicsFeatureNameFeature.FeatureSetup(null);
+            }
         }
         
-        [NUnit.Framework.TearDownAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute()]
         public virtual void ScenarioTearDown()
         {
             testRunner.OnScenarioEnd();
@@ -64,9 +68,10 @@ namespace Ghpr.SpecFlow.Examples.Features.MathFeatures
             testRunner.CollectScenarioErrors();
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add two numbers")]
-        [NUnit.Framework.CategoryAttribute("Addition")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Add two numbers")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Basics feature name")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Addition")]
         public virtual void AddTwoNumbers()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add two numbers", new string[] {
@@ -83,9 +88,10 @@ this.ScenarioSetup(scenarioInfo);
             this.ScenarioCleanup();
         }
         
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add three numbers")]
-        [NUnit.Framework.CategoryAttribute("Addition")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Add three numbers")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Basics feature name")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("Addition")]
         public virtual void AddThreeNumbers()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add three numbers", new string[] {
