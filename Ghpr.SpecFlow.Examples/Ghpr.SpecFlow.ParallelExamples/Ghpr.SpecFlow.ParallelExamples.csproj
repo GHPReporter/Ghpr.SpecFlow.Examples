@@ -77,10 +77,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Features\MathFeatures\Basics feature name.feature.cs">
+    <Compile Include="Features\MathFeatures\Basics.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Basics feature name.feature</DependentUpon>
+      <DependentUpon>Basics.feature</DependentUpon>
     </Compile>
     <Compile Include="Features\MathFeatures\Other1.feature.cs">
       <AutoGen>True</AutoGen>
@@ -95,9 +95,9 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Features\MathFeatures\Basics feature name.feature">
+    <None Include="Features\MathFeatures\Basics.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Basics feature name.feature.cs</LastGenOutput>
+      <LastGenOutput>Basics.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\MathFeatures\Other.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

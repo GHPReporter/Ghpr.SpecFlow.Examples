@@ -24,7 +24,7 @@ namespace Ghpr.SpecFlow.Examples.Features.MathFeatures
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "Basics feature name.feature"
+#line 1 "Basics.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
