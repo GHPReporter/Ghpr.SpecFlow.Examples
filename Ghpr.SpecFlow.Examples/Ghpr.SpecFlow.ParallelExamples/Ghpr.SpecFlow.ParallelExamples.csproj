@@ -104,7 +104,9 @@
       <LastGenOutput>Other1.feature.cs</LastGenOutput>
     </None>
     <None Include="Ghpr.Core.Settings.json" />
-    <None Include="Ghpr.SpecFlow.Settings.json" />
+    <None Include="Ghpr.SpecFlow.Settings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
