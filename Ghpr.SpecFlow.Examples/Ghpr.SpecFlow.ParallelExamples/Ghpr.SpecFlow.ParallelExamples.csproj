@@ -82,6 +82,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Basics.feature</DependentUpon>
     </Compile>
+    <Compile Include="Features\MathFeatures\MathTables.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MathTables.feature</DependentUpon>
+    </Compile>
     <Compile Include="Features\MathFeatures\Other1.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -98,6 +103,10 @@
     <None Include="Features\MathFeatures\Basics.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Basics.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Features\MathFeatures\MathTables.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MathTables.feature.cs</LastGenOutput>
     </None>
     <None Include="Features\MathFeatures\Other.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
