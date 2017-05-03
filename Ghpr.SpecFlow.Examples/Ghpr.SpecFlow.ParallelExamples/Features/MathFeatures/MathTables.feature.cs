@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace Ghpr.SpecFlow.Examples.Features.MathFeatures
+namespace Ghpr.SpecFlow.ParallelExamples.Features.MathFeatures
 {
     using TechTalk.SpecFlow;
     

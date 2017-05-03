@@ -3,7 +3,7 @@ using System.Threading;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 
-namespace Ghpr.SpecFlow.Examples.Steps
+namespace Ghpr.SpecFlow.ParallelExamples.Steps
 {
     [Binding]
     public class OtherSteps

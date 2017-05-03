@@ -7,8 +7,8 @@
     <ProjectGuid>{95697E24-84E0-4412-8147-D4ABB4102D9D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ghpr.SpecFlow.Examples</RootNamespace>
-    <AssemblyName>Ghpr.SpecFlow.Examples</AssemblyName>
+    <RootNamespace>Ghpr.SpecFlow.ParallelExamples</RootNamespace>
+    <AssemblyName>Ghpr.SpecFlow.ParallelExamples</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
