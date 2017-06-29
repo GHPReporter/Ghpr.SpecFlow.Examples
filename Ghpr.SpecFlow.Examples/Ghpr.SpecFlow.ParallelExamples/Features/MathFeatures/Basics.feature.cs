@@ -135,6 +135,8 @@ this.ScenarioSetup(scenarioInfo);
 #line 27
  testRunner.When("I add \'20\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 28
+ testRunner.And("I take screenshot", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 29
  testRunner.Then("the result sum should be \'70\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -147,13 +149,13 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add two numbers v5", new string[] {
                         "Addition"});
-#line 31
-this.ScenarioSetup(scenarioInfo);
 #line 32
- testRunner.Given("I have number \'50\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 33
- testRunner.When("I add \'20\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("I have number \'50\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 34
+ testRunner.When("I add \'20\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 35
  testRunner.Then("the result sum should be \'70\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -166,15 +168,15 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add three numbers", new string[] {
                         "Addition"});
-#line 37
-this.ScenarioSetup(scenarioInfo);
 #line 38
- testRunner.Given("I have number \'10\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 39
- testRunner.When("I add \'20\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("I have number \'10\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 40
- testRunner.And("I add \'7\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I add \'20\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 41
+ testRunner.And("I add \'7\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 42
  testRunner.Then("the result sum should be \'37\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

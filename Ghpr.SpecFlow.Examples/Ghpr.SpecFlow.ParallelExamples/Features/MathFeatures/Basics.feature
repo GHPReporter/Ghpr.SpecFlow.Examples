@@ -25,6 +25,7 @@ Scenario: Add two numbers v3
 Scenario: Add two numbers v4
 	Given I have number '50'
 	When I add '20'
+	And I take screenshot
 	Then the result sum should be '70'
 
 @Addition

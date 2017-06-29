@@ -99,6 +99,8 @@ this.ScenarioSetup(scenarioInfo);
 #line 16
  testRunner.And("I add 7", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 17
+ testRunner.And("I take screenshot", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 18
  testRunner.Then("the result sum should be 37", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

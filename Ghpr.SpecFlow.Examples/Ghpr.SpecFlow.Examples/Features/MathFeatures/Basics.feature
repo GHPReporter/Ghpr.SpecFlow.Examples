@@ -14,4 +14,5 @@ Scenario: Add three numbers
 	Given I have number 10
 	When I add 20
 	And I add 7
+	And I take screenshot
 	Then the result sum should be 37
