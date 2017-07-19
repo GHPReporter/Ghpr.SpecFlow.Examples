@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ghpr.SpecFlow.Examples", "Ghpr.SpecFlow.Examples\Ghpr.SpecFlow.Examples.csproj", "{9C73A1AD-C7FB-44A8-A19D-01B87A5372E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ghpr.SpecFlow.NUnit.Examples", "Ghpr.SpecFlow.Examples\Ghpr.SpecFlow.NUnit.Examples.csproj", "{9C73A1AD-C7FB-44A8-A19D-01B87A5372E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ghpr.SpecFlow.ParallelExamples", "Ghpr.SpecFlow.ParallelExamples\Ghpr.SpecFlow.ParallelExamples.csproj", "{95697E24-84E0-4412-8147-D4ABB4102D9D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ghpr.SpecFlow.NUnit.ParallelExamples", "Ghpr.SpecFlow.ParallelExamples\Ghpr.SpecFlow.NUnit.ParallelExamples.csproj", "{95697E24-84E0-4412-8147-D4ABB4102D9D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
