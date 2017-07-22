@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ghpr.SpecFlow.NUnit.Example
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ghpr.SpecFlow.NUnit.ParallelExamples", "Ghpr.SpecFlow.ParallelExamples\Ghpr.SpecFlow.NUnit.ParallelExamples.csproj", "{95697E24-84E0-4412-8147-D4ABB4102D9D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NUnit", "NUnit", "{5E970A5A-F440-4D7F-9468-CCEFBE875E4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MSTest", "MSTest", "{4206D753-5B7E-4205-B9E3-0EFCDF16E8B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ghpr.SpecFlow.MSTest.Examples", "Ghpr.SpecFlow.MSTest.Examples\Ghpr.SpecFlow.MSTest.Examples.csproj", "{EDBCB2BD-8451-4651-B998-B844C5C4940A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +27,17 @@ Global
 		{95697E24-84E0-4412-8147-D4ABB4102D9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95697E24-84E0-4412-8147-D4ABB4102D9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95697E24-84E0-4412-8147-D4ABB4102D9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDBCB2BD-8451-4651-B998-B844C5C4940A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDBCB2BD-8451-4651-B998-B844C5C4940A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDBCB2BD-8451-4651-B998-B844C5C4940A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDBCB2BD-8451-4651-B998-B844C5C4940A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9C73A1AD-C7FB-44A8-A19D-01B87A5372E6} = {5E970A5A-F440-4D7F-9468-CCEFBE875E4C}
+		{95697E24-84E0-4412-8147-D4ABB4102D9D} = {5E970A5A-F440-4D7F-9468-CCEFBE875E4C}
+		{EDBCB2BD-8451-4651-B998-B844C5C4940A} = {4206D753-5B7E-4205-B9E3-0EFCDF16E8B2}
 	EndGlobalSection
 EndGlobal
