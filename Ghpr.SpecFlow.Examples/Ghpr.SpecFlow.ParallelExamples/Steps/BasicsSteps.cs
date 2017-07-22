@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
-using Ghpr.SpecFlowPlugin;
+using GhprSpecFlow.Common;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 
@@ -54,7 +54,8 @@ namespace Ghpr.SpecFlow.ParallelExamples.Steps
         public void WhenITakeScreenshot()
         {
             var bytes = TakeScreen();
-            ScreenHelper.SaveScreenshot(bytes);
+            GhprPluginHelper.TestExecutionEngineHelper.ScreenHelper.SaveScreenshot(bytes);
+            //ScreenHelper.SaveScreenshot(bytes);
         }
     }
 }

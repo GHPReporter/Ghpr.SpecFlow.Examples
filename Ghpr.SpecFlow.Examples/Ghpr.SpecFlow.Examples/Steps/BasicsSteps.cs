@@ -2,9 +2,9 @@
 using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
-using Ghpr.SpecFlowPlugin;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
+using static GhprSpecFlow.Common.GhprPluginHelper;
 
 namespace Ghpr.SpecFlow.Examples.Steps
 {
@@ -52,7 +52,7 @@ namespace Ghpr.SpecFlow.Examples.Steps
         public void WhenITakeScreenshot()
         {
             var bytes = TakeScreen();
-            ScreenHelper.SaveScreenshot(bytes);
+            TestExecutionEngineHelper.ScreenHelper.SaveScreenshot(bytes);
         }
 
         [AfterScenario]
@@ -62,7 +62,7 @@ namespace Ghpr.SpecFlow.Examples.Steps
             {
                 case "passed":
                     var bytes = TakeScreen();
-                    ScreenHelper.SaveScreenshot(bytes);
+                    TestExecutionEngineHelper.ScreenHelper.SaveScreenshot(bytes);
                     break;
 
                 default:
