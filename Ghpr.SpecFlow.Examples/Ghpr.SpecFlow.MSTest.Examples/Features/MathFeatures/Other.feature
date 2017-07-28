@@ -11,7 +11,7 @@ Scenario: Absolute value positive
 	
 @Abs
 Scenario: Absolute value negative
-	Given I take number -3
+	Given I take number -4
 	When I calculate number's absolute value
 	Then the result value should be 3
 	

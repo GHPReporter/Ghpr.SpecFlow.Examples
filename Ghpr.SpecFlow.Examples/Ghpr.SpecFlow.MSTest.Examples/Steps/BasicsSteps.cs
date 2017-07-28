@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 using GhprSpecFlow.Common;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TechTalk.SpecFlow;
 
 namespace Ghpr.SpecFlow.MSTest.Examples.Steps
@@ -58,9 +58,9 @@ namespace Ghpr.SpecFlow.MSTest.Examples.Steps
         [AfterScenario]
         public static void WrapUpReport()
         {
-            switch (TestContext.CurrentContext.Result.Outcome.Status.ToString().ToLower())
+            switch ((ScenarioContext.Current["TestContext"] as TestContext)?.CurrentTestOutcome)
             {
-                case "passed":
+                case UnitTestOutcome.Failed:
                     var bytes = TakeScreen();
                     GhprPluginHelper.TestExecutionEngineHelper.ScreenHelper.SaveScreenshot(bytes);
                     break;

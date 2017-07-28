@@ -23,8 +23,22 @@ namespace Ghpr.SpecFlow.MSTest.Examples.Features.MathFeatures
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
+        private Microsoft.VisualStudio.TestTools.UnitTesting.TestContext _testContext;
+        
 #line 1 "Basics.feature"
 #line hidden
+        
+        public Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
+        {
+            get
+            {
+                return this._testContext;
+            }
+            set
+            {
+                this._testContext = value;
+            }
+        }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute()]
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
@@ -61,6 +75,7 @@ namespace Ghpr.SpecFlow.MSTest.Examples.Features.MathFeatures
         public virtual void ScenarioSetup(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
         {
             testRunner.OnScenarioStart(scenarioInfo);
+            testRunner.ScenarioContext.Add("TestContext", TestContext);
         }
         
         public virtual void ScenarioCleanup()

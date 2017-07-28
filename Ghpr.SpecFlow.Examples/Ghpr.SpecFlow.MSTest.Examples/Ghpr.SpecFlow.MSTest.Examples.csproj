@@ -34,21 +34,25 @@
       <HintPath>..\packages\SpecFlow.CustomPlugin.2.2.0\lib\net45\Gherkin.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ghpr.Core, Version=0.5.0.3, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ghpr.Core.0.5.0.3\lib\net452\Ghpr.Core.dll</HintPath>
+    <Reference Include="Ghpr.Core, Version=0.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ghpr.Core.0.6.0\lib\net452\Ghpr.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ghpr.SpecFlow.Common, Version=0.5.0.5, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ghpr.SpecFlow.Common.0.5.0.5\lib\net452\Ghpr.SpecFlow.Common.dll</HintPath>
+    <Reference Include="Ghpr.MSTest.SpecFlowPlugin, Version=0.5.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ghpr.MSTest.SpecFlowPlugin.0.5.9\lib\net452\Ghpr.MSTest.SpecFlowPlugin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ghpr.MSTest.TestContext.SpecFlowPlugin, Version=0.5.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ghpr.MSTest.TestContext.SpecFlowPlugin.0.5.9\lib\net452\Ghpr.MSTest.TestContext.SpecFlowPlugin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ghpr.SpecFlow.Common, Version=0.5.9.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ghpr.SpecFlow.Common.0.5.9\lib\net452\Ghpr.SpecFlow.Common.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="nunit.framework, Version=3.7.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.7.1\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -106,11 +110,10 @@
       <LastGenOutput>Other1.feature.cs</LastGenOutput>
     </None>
     <None Include="Ghpr.Core.Settings.json" />
-    <None Include="Ghpr.SpecFlow.Settings.json" />
+    <None Include="Ghpr.SpecFlow.Settings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include=".nuget\nuget.exe" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
